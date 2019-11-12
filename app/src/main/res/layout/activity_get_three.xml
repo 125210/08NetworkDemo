@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GetThreeActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scr_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tx_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="天气预报" />
+
+        <Button
+            android:id="@+id/btn_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="今日油价"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="新闻头条"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
